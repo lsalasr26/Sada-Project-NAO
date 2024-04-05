@@ -647,11 +647,48 @@ progress {
     max-width: 540px;
   }
 }
+
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
     max-width: 720px;
   }
 }
+
+@media (max-width: 767px) {
+  .badge {
+    display: none !important;
+  }
+  .img-fluid  {
+    display: none !important;
+  }
+  .feature{
+    display: none !important;
+  }
+  .fw-bolder-2 {
+    text-align: start !important;
+  }
+  .center-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+  p{
+    text-align: center;
+  }
+}
+
+@media (max-width: 477px) {
+  .fw-bolder-name  {
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .img-fluid  {
+    max-width: 300px !important;
+  }
+}
+
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
     max-width: 960px;
